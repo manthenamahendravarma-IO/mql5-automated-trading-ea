@@ -1,0 +1,36 @@
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A0A0A"/>
+      <stop offset="100%" stop-color="#1A1A1A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="88" fill="url(#bg)"/>
+
+  <!-- Thin border frame -->
+  <rect x="24" y="24" width="464" height="464" rx="72" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity="0.15"/>
+
+  <!-- Candlestick chart motif -->
+  <g stroke="#FFFFFF" stroke-width="4" fill="none" stroke-linecap="round">
+    <!-- wicks -->
+    <line x1="150" y1="150" x2="150" y2="340"/>
+    <line x1="230" y1="120" x2="230" y2="300"/>
+    <line x1="310" y1="180" x2="310" y2="380"/>
+    <line x1="390" y1="140" x2="390" y2="260"/>
+  </g>
+
+  <!-- candle bodies -->
+  <rect x="132" y="190" width="36" height="90" fill="#FFFFFF"/>
+  <rect x="212" y="160" width="36" height="70" fill="#0A0A0A" stroke="#FFFFFF" stroke-width="4"/>
+  <rect x="292" y="230" width="36" height="100" fill="#FFFFFF"/>
+  <rect x="372" y="170" width="36" height="55" fill="#0A0A0A" stroke="#FFFFFF" stroke-width="4"/>
+
+  <!-- ascending trend line -->
+  <polyline points="150,300 230,255 310,215 390,150" fill="none" stroke="#FFFFFF" stroke-width="3" opacity="0.6" stroke-dasharray="2 8" stroke-linecap="round"/>
+
+  <!-- Wordmark -->
+  <text x="256" y="440" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="42" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="4">MQL5 EA</text>
+  <rect x="176" y="454" width="160" height="2" fill="#FFFFFF" opacity="0.4"/>
+</svg>
